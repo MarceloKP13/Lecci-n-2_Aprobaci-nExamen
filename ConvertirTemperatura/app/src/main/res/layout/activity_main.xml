@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0698AA">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Temperatura"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/decaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Convertir de Celsius a Fahrenheit"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/defac"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Convertir de Fahrenheit a Celsius"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textoGrados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese el dato a convertir"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/opciones"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/grados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Ingrese los grados"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textoGrados"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  CONVERTIR  "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/colorboton"
+        android:textStyle="bold"
+        android:layout_below="@id/grados"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/boton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
